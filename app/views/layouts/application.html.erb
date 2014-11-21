@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TestRuby</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+
+	<header>
+		<div class="content-wrapper">
+			<div class="float-left">
+				<p class="site-title">My Aplicacion</p>
+				<nav>
+					<ul id="menu">
+						<li><%= link_to 'Home', 		:controller => 'welcome', :action => 'index' %> </li>
+                        <li><%= link_to 'Obras', 		:controller => 'welcome', :action => 'index' %></li>
+                        <li><%= link_to 'Autores', 		:controller => 'autores', :action => 'index' %></li>
+                        <li><%= link_to 'Contratos', 	:controller => 'welcome', :action => 'index' %></li>
+                        <li><%= link_to 'Liquidaciones',:controller => 'welcome', :action => 'index' %></li>
+                        <li><%= link_to 'Usuarios', 	:controller => 'welcome', :action => 'index' %></li>
+                        <li><%= link_to 'Provisiones', 	:controller => 'welcome', :action => 'index' %></li>
+					</ul>		
+				</nav>
+			</div>	
+		</div>
+	</header>
+	<div id="body">
+	<!-- >>>>> CONTENT >>>>>  -->
+		<%= yield %>
+	
+	<!-- <<<<< CONTENT <<<<<  -->
+	</div>
+	<footer>
+		<div class="content-wrapper">
+			<div class="float-right">
+				<p>Prueba RoR - &copy;dgsosa</p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

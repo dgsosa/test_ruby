@@ -1,0 +1,81 @@
+<%= form_for(@autor) do |f| %>
+  <% if @autor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@autor.errors.count, "error") %> prohibited this autor from being saved:</h2>
+
+      <ul>
+      <% @autor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sales_org %><br>
+    <%= f.text_field :sales_org %>
+  </div>
+  <div class="field">
+    <%= f.label :vendor %><br>
+    <%= f.text_field :vendor %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :telephone %><br>
+    <%= f.text_field :telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :tax_number %><br>
+    <%= f.text_field :tax_number %>
+  </div>
+  <div class="field">
+    <%= f.label :tax_type %><br>
+    <%= f.text_field :tax_type %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :idsap %><br>
+    <%= f.text_field :idsap %>
+  </div>
+  <div class="field">
+    <%= f.label :ext_email %><br>
+    <%= f.text_field :ext_email %>
+  </div>
+  <div class="field">
+    <%= f.label :ext_heredero %><br>
+    <%= f.text_field :ext_heredero %>
+  </div>
+  <div class="field">
+    <%= f.label :ext_telefono %><br>
+    <%= f.text_field :ext_telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :ext_envia_reporte_liq %><br>
+    <%= f.number_field :ext_envia_reporte_liq %>
+  </div>
+  <div class="field">
+    <%= f.label :ext_envia_reporte_stock %><br>
+    <%= f.number_field :ext_envia_reporte_stock %>
+  </div>
+  <div class="field">
+    <%= f.label :ext_email_alternativo %><br>
+    <%= f.text_field :ext_email_alternativo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

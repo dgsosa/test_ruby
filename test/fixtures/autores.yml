@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sales_org: MyString
+  vendor: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  telephone: MyString
+  tax_number: MyString
+  tax_type: MyString
+  status: MyString
+  idsap: MyString
+  ext_email: MyString
+  ext_heredero: MyString
+  ext_telefono: MyString
+  ext_envia_reporte_liq: 1
+  ext_envia_reporte_stock: 1
+  ext_email_alternativo: MyString
+
+two:
+  sales_org: MyString
+  vendor: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  telephone: MyString
+  tax_number: MyString
+  tax_type: MyString
+  status: MyString
+  idsap: MyString
+  ext_email: MyString
+  ext_heredero: MyString
+  ext_telefono: MyString
+  ext_envia_reporte_liq: 1
+  ext_envia_reporte_stock: 1
+  ext_email_alternativo: MyString

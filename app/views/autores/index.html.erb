@@ -1,0 +1,55 @@
+<h1>Listing autores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sales org</th>
+      <th>Vendor</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Telephone</th>
+      <th>Tax number</th>
+      <th>Tax type</th>
+      <th>Status</th>
+      <th>Idsap</th>
+      <th>Ext email</th>
+      <th>Ext heredero</th>
+      <th>Ext telefono</th>
+      <th>Ext envia reporte liq</th>
+      <th>Ext envia reporte stock</th>
+      <th>Ext email alternativo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @autores.each do |autor| %>
+      <tr>
+        <td><%= autor.sales_org %></td>
+        <td><%= autor.vendor %></td>
+        <td><%= autor.first_name %></td>
+        <td><%= autor.last_name %></td>
+        <td><%= autor.email %></td>
+        <td><%= autor.telephone %></td>
+        <td><%= autor.tax_number %></td>
+        <td><%= autor.tax_type %></td>
+        <td><%= autor.status %></td>
+        <td><%= autor.idsap %></td>
+        <td><%= autor.ext_email %></td>
+        <td><%= autor.ext_heredero %></td>
+        <td><%= autor.ext_telefono %></td>
+        <td><%= autor.ext_envia_reporte_liq %></td>
+        <td><%= autor.ext_envia_reporte_stock %></td>
+        <td><%= autor.ext_email_alternativo %></td>
+        <td><%= link_to 'Show', autor %></td>
+        <td><%= link_to 'Edit', edit_autor_path(autor) %></td>
+        <td><%= link_to 'Destroy', autor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Autor', new_autor_path %>
