@@ -1,6 +1,6 @@
-<h1>Listing autores</h1>
+<h1>Mostrando  autores</h1>
 
-<table>
+<table id='tabla_autores'>
   <thead>
     <tr>
       <th>Sales org</th>
@@ -42,9 +42,6 @@
         <td><%= autor.ext_envia_reporte_liq %></td>
         <td><%= autor.ext_envia_reporte_stock %></td>
         <td><%= autor.ext_email_alternativo %></td>
-        <td><%= link_to 'Show', autor %></td>
-        <td><%= link_to 'Edit', edit_autor_path(autor) %></td>
-        <td><%= link_to 'Destroy', autor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

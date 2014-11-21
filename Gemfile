@@ -38,3 +38,5 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# use jquery Datatables
+gem 'jquery-datatables-rails', '~> 3.1.0'
