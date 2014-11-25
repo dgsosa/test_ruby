@@ -39,4 +39,8 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 # use jquery Datatables
-gem 'jquery-datatables-rails', '~> 3.1.0'
+#gem 'jquery-datatables-rails', '~> 3.1.0'
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
+
+# para la paginacion de las datatables.
+gem 'will_paginate'

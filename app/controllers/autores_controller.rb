@@ -3,9 +3,18 @@ class AutoresController < ApplicationController
 
   # GET /autores
   # GET /autores.json
-  def index
-    @autores = Autor.all
+  #def index
+  #  @autores = Autor.all
+  #end
+
+
+def index
+  respond_to do |format|
+    format.html
+    format.json { render json: AutoresDatatable.new(view_context) }
   end
+end
+
 
   # GET /autores/1
   # GET /autores/1.json
